@@ -18,7 +18,7 @@
 
 <div style="padding:40px 40px 20px 40px; background-color: white; opacity: 0.6; cursor: pointer;" onclick="openNav(info)">
 	<div>Thai In</div>
-	<div style="text-align: center; margin:0; padding:0;">&#709;</div>
+	<div style="text-align: center; margin:0; padding:0; font-size: 1.8rem;">&#709;</div>
 </div>
 <div> 
 	<div class="meny" onclick="openNav(mymeny)">Meny</div>
