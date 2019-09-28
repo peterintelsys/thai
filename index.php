@@ -16,16 +16,25 @@
 	
 <div class="head">
 
-<div style="padding:40px; background-color: white; opacity: 0.6; cursor: pointer;" onclick="openNav(info)">Thai In </div>
+<div style="padding:40px 40px 20px 40px; background-color: white; opacity: 0.6; cursor: pointer;" onclick="openNav(info)">
+	<div>Thai In</div>
+	<div style="text-align: center; margin:0; padding:0;">&#709;</div>
+</div>
 <div> 
 	<div class="meny" onclick="openNav(mymeny)">Meny</div>
-
 </div>
 
 </div>
 
 
 <div id="info" class="info">
+
+	<div style="display: flex; justify-content: space-between;">
+		<div style="font-size: 1.2rem;">Information.</div>
+		<div style="cursor: pointer; color: black;" onclick="openNav(info)">&#9587;</div>
+	</div>
+	<br>
+
 	<div>Telefon: <span style="font-weight: 600;">0431 - 107 60</span></div>
 	<div style="font-weight: 600;">Höjavägen 13, Ängelholm</div><br>
 	<div>Öppet</div>
@@ -35,7 +44,12 @@
 </div>
 
 <div id="mymeny" class="info mymeny">
-	<div style="font-size: 1.2rem;">Meny.</div><br>
+	<div style="display: flex; justify-content: space-between;">
+		<div style="font-size: 1.2rem;">Meny.</div>
+		<div style="cursor: pointer; color: black;" onclick="openNav(mymeny)">&#9587;</div>
+	</div>	
+
+	<br>
 
 	<div class="detalj">
 		<div style="font-weight: 600;">nr. 1 Phad med Ma Måomg.</div>
