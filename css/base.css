@@ -1,0 +1,186 @@
+/* minimal css reset skall alltid vara med först i filen*/
+/* en stjärna betyder att all kod får denna kod i början sen kan man anpassa den se ex. h1 och h2.*/
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0;}
+
+/*img, video { max-width: 100%; height: auto;}*/
+
+/* button reset annars blir inte button och links samma storlek */
+button, input[type="submit"] {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+html {
+  font-family:  'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #121212;
+  background-color: #1a1a1a;
+}
+
+body, h1, h2, h3, h4, h5, h6, ol, ul {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+/*End css reset*/
+
+h1, h2, h3 {
+	color: #4a4a4a;
+	line-height: 1.8;
+	font-weight: 300;
+}
+
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.fullimg {
+  position: relative;
+  /* The image used */
+  background-image: url("../img/first.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  
+  background-color: white;
+  opacity: 0.6;
+}
+
+.meny {
+  background-color: #FF4F34;
+  padding:16px 40px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.head {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.info {
+  display: none;
+  width: 40%;
+  padding:40px;
+  background-color:
+  white;
+  opacity: 0.6;
+}
+
+.mymeny {
+  opacity: 0.8;
+}
+
+.detalj {
+  border-top: 1px solid black;
+  padding: 12px 0;
+}
+
+.detalj:first-child {
+  border-top:none;
+}
+
+@media screen and (max-width: 800px) {
+    .info {
+  
+  width: 100%;
+  
+}
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  text-align: center;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  text-align: center;
+}
